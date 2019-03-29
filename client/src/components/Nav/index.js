@@ -8,13 +8,13 @@ function Nav() {
 
     <>
 
-      <nav className="navbar navbar-expand-lg bg-white fixed-top" id="mainNav">
+      <nav className="navbar navbar-expand-lg bg-white sticky-top" id="mainNav">
         <div className="container">
           <div className="nav-item">
-            <h1 className="nav-link text-warning display-5  font-weight-bolder " href="/">
-              <Link className="text-warning display-5 font-weight-bolder " to="/">
-                Houdini
-                  </Link>
+            <h1 className="nav-link text-warning display-5 font-weight-bolder" href="/">
+              <Link className="text-warning display-5 font-weight-bolder h1" to="/">
+                <i class="fas fa-1x fa-magic"></i>   Houdini
+              </Link>
             </h1>
           </div>
           <button className="navbar-toggler text-dark" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">

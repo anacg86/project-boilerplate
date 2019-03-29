@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./style.css";
 import GroupButton from "../Gbtn";
 import Nav from "./../Nav";
+import Footer from "./../Footer";
 import { Link } from "react-router-dom";
 
 class All extends Component {
@@ -11,15 +12,17 @@ class All extends Component {
         <Nav />
         <main>
           <div className="grid">
-            <div id="about" className="grid__item bg-light">
+
+            <div id="about" className="grid__item bg-dark">
               <div className="grid__item-content text-warning">
-                <h1 className="display-1 font-weight-bold ">Get Ready</h1>
+                <h1 className="display-1 font-weight-bolder ">Get Ready</h1>
                 <h3 className="display-3 font-weight-bolder ">with Houdini</h3>
+
               </div>
             </div>
 
-            <div className="grid__item bg-light">
-              <div className="grid__item-content text-dark">
+            <div className="grid__item bg-dark">
+              <div className="grid__item-content text-light">
                 <small>Anyday, Anywhere</small>
 
                 <h1 className="display-4 font-weight-bold">
@@ -32,7 +35,7 @@ class All extends Component {
                   about the product.
                 </p>
                 <Link className="text-dark" to="/contact" className="btn w-80 btn-outline-dark">
-                    Contact
+                  Contact
                 </Link>
               </div>
             </div>
@@ -94,6 +97,7 @@ class All extends Component {
             </div>
           </div>
         </main>
+        <Footer />
       </>
     );
   }
