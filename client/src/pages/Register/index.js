@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import Suppliers from "./Suppliers";
-import Buyers from "./Buyers";
+import Form from "./Form";
 import "./style.css";
 
 class Register extends Component {
@@ -10,38 +9,10 @@ class Register extends Component {
         <div className="col-12 mt-5">
           <div className="col-12 ">
             <h5 className=" text-dark text-center display-4 font-weight-bold">
-              Register
+              Registrate
             </h5>
-            <p className="lead text-center">Fill all the information below.</p>
+            <p className="lead text-center">Ingresa la siguiente información</p>
 
-            <ul className="nav nav-pills " id="pills-tab" role="tablist">
-              <li className="nav-item">
-                <a
-                  className="nav-link active text-dark"
-                  id="pills-buyers-tab"
-                  data-toggle="pill"
-                  href="#pills-buyers"
-                  role="tab"
-                  aria-controls="pills-buyers"
-                  aria-selected="true"
-                >
-                  As Buyer
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="nav-link text-dark"
-                  id="pills-suppliers-tab"
-                  data-toggle="pill"
-                  href="#pills-suppliers"
-                  role="tab"
-                  aria-controls="pills-suppliers"
-                  aria-selected="false"
-                >
-                  As a Suppliers
-                </a>
-              </li>
-            </ul>
           </div>
         </div>
 
@@ -52,15 +23,7 @@ class Register extends Component {
             role="tabpanel"
             aria-labelledby="pills-buyers-tab"
           >
-            <Buyers />
-          </div>
-          <div
-            className="tab-pane fade"
-            id="pills-suppliers"
-            role="tabpanel"
-            aria-labelledby="pills-suppliers-tab"
-          >
-            <Suppliers />
+            <Form />
           </div>
         </div>
       </div>

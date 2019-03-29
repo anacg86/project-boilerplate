@@ -11,6 +11,12 @@ export default {
   getClients: function() {
     return axios.get("/api/client");
   },
+  getCompanies: function() {
+    return axios.get("/api/company");
+  },
+  getCompanyProducts: function(id) {
+    return axios.get(`/api/company/${id}/products`);
+  },
 
   // Gets the example with the given id
   getProduct: function(id) {
