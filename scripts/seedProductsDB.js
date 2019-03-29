@@ -13,8 +13,7 @@ let productosSeed = [
     precio_unitario: 70,
     flete: "",
     fecha_entrega: "06/04/2019",
-    cantidad_disponible: 100,
-    proveedor: "Proveedor 1"
+    cantidad_disponible: 100
   },
   {
     nombre: "Aglomerado",
@@ -22,8 +21,7 @@ let productosSeed = [
     precio_unitario: 90.52,
     flete: "",
     fecha_entrega: "06/04/2019",
-    cantidad_disponible: 100,
-    proveedor: "Proveedor 1"
+    cantidad_disponible: 100
   },
   {
     nombre: "Caobilla",
@@ -31,8 +29,7 @@ let productosSeed = [
     precio_unitario: 102.59,
     flete: "",
     fecha_entrega: "06/04/2019",
-    cantidad_disponible: 100,
-    proveedor: "Proveedor 2"
+    cantidad_disponible: 100
   },
   {
     nombre: "Caobilla",
@@ -40,8 +37,7 @@ let productosSeed = [
     precio_unitario: 162.93,
     flete: "",
     fecha_entrega: "06/04/2019",
-    cantidad_disponible: 100,
-    proveedor: "Proveedor 2"
+    cantidad_disponible: 100
   },
   {
     nombre: "Encino",
@@ -49,8 +45,7 @@ let productosSeed = [
     precio_unitario: 184.05,
     flete: "",
     fecha_entrega: "06/04/2019",
-    cantidad_disponible: 100,
-    proveedor: "Proveedor 3"
+    cantidad_disponible: 100
   },
   {
     nombre: "Encino",
@@ -58,8 +53,7 @@ let productosSeed = [
     precio_unitario: 205.17,
     flete: "",
     fecha_entrega: "06/04/2019",
-    cantidad_disponible: 50,
-    proveedor: "Proveedor 3"
+    cantidad_disponible: 50
   },
   {
     nombre: "Listonado de Encino",
@@ -67,8 +61,7 @@ let productosSeed = [
     precio_unitario: 675.86,
     flete: "",
     fecha_entrega: "06/04/2019",
-    cantidad_disponible: 50,
-    proveedor: "Proveedor 3"
+    cantidad_disponible: 50
   },
   {
     nombre: "Listonado de Encino",
@@ -76,8 +69,7 @@ let productosSeed = [
     precio_unitario: 715.09,
     flete: "",
     fecha_entrega: "06/04/2019",
-    cantidad_disponible: 50,
-    proveedor: "Proveedor 3"
+    cantidad_disponible: 50
   },
   {
     nombre: "MDF",
@@ -85,8 +77,7 @@ let productosSeed = [
     precio_unitario: 60.34,
     flete: "",
     fecha_entrega: "06/04/2019",
-    cantidad_disponible: 100,
-    proveedor: "Proveedor 4"
+    cantidad_disponible: 100
   },
   {
     nombre: "MDF",
@@ -94,8 +85,7 @@ let productosSeed = [
     precio_unitario: 87.5,
     flete: "",
     fecha_entrega: "06/04/2019",
-    cantidad_disponible: 100,
-    proveedor: "Proveedor 4"
+    cantidad_disponible: 100
   },
   {
     nombre: "MDF",
@@ -103,8 +93,7 @@ let productosSeed = [
     precio_unitario: 140.0,
     flete: "",
     fecha_entrega: "06/04/2019",
-    cantidad_disponible: 100,
-    proveedor: "Proveedor 4"
+    cantidad_disponible: 100
   },
   {
     nombre: "MDF",
@@ -112,8 +101,7 @@ let productosSeed = [
     precio_unitario: 162.93,
     flete: "",
     fecha_entrega: "06/04/2019",
-    cantidad_disponible: 50,
-    proveedor: "Proveedor 4"
+    cantidad_disponible: 50
   },
   {
     nombre: "MDF",
@@ -121,8 +109,7 @@ let productosSeed = [
     precio_unitario: 187.07,
     flete: "",
     fecha_entrega: "06/04/2019",
-    cantidad_disponible: 50,
-    proveedor: "Proveedor 4"
+    cantidad_disponible: 50
   },
   {
     nombre: "MDF",
@@ -130,8 +117,7 @@ let productosSeed = [
     precio_unitario: 229.31,
     flete: "",
     fecha_entrega: "06/04/2019",
-    cantidad_disponible: 50,
-    proveedor: "Proveedor 4"
+    cantidad_disponible: 50
   },
   {
     nombre: "MDF Enchapado de Okume",
@@ -139,8 +125,7 @@ let productosSeed = [
     precio_unitario: 181.03,
     flete: "",
     fecha_entrega: "06/04/2019",
-    cantidad_disponible: 100,
-    proveedor: "Proveedor 4"
+    cantidad_disponible: 100
   },
   {
     nombre: "MDO",
@@ -148,8 +133,7 @@ let productosSeed = [
     precio_unitario: 676.72,
     flete: "",
     fecha_entrega: "06/04/2019",
-    cantidad_disponible: 50,
-    proveedor: "Proveedor 1"
+    cantidad_disponible: 50
   },
   {
     nombre: "MDO",
@@ -157,8 +141,7 @@ let productosSeed = [
     precio_unitario: 585.34,
     flete: "",
     fecha_entrega: "06/04/2019",
-    cantidad_disponible: 50,
-    proveedor: "Proveedor 1"
+    cantidad_disponible: 50
   },
   {
     nombre: "Nogal",
@@ -166,8 +149,7 @@ let productosSeed = [
     precio_unitario: 259.48,
     flete: "",
     fecha_entrega: "06/04/2019",
-    cantidad_disponible: 100,
-    proveedor: "Proveedor 3"
+    cantidad_disponible: 100
   },
   {
     nombre: "Nogal",
@@ -175,8 +157,7 @@ let productosSeed = [
     precio_unitario: 684.91,
     flete: "",
     fecha_entrega: "06/04/2019",
-    cantidad_disponible: 50,
-    proveedor: "Proveedor 3"
+    cantidad_disponible: 50
   },
   {
     nombre: "Nogal",
@@ -184,8 +165,7 @@ let productosSeed = [
     precio_unitario: 760.34,
     flete: "",
     fecha_entrega: "06/04/2019",
-    cantidad_disponible: 50,
-    proveedor: "Proveedor 3"
+    cantidad_disponible: 50
   },
   {
     nombre: "Okume",
@@ -193,8 +173,7 @@ let productosSeed = [
     precio_unitario: 199.14,
     flete: "",
     fecha_entrega: "06/04/2019",
-    cantidad_disponible: 100,
-    proveedor: "Proveedor 5"
+    cantidad_disponible: 100
   },
   {
     nombre: "Listonado de Okume",
@@ -202,8 +181,7 @@ let productosSeed = [
     precio_unitario: 482.76,
     flete: "",
     fecha_entrega: "06/04/2019",
-    cantidad_disponible: 50,
-    proveedor: "Proveedor 5"
+    cantidad_disponible: 50
   },
   {
     nombre: "Listonado de Okume",
@@ -211,8 +189,7 @@ let productosSeed = [
     precio_unitario: 494.83,
     flete: "",
     fecha_entrega: "06/04/2019",
-    cantidad_disponible: 50,
-    proveedor: "Proveedor 5"
+    cantidad_disponible: 50
   },
   {
     nombre: "Listonado de Okume",
@@ -220,8 +197,7 @@ let productosSeed = [
     precio_unitario: 518.97,
     flete: "",
     fecha_entrega: "06/04/2019",
-    cantidad_disponible: 50,
-    proveedor: "Proveedor 5"
+    cantidad_disponible: 50
   },
   {
     nombre: "OSB",
@@ -229,8 +205,7 @@ let productosSeed = [
     precio_unitario: 168.97,
     flete: "",
     fecha_entrega: "06/04/2019",
-    cantidad_disponible: 50,
-    proveedor: "Proveedor 6"
+    cantidad_disponible: 50
   },
   {
     nombre: "Pino BD",
@@ -238,8 +213,7 @@ let productosSeed = [
     precio_unitario: 126.12,
     flete: "",
     fecha_entrega: "06/04/2019",
-    cantidad_disponible: 100,
-    proveedor: "Proveedor 4"
+    cantidad_disponible: 100
   },
   {
     nombre: "Pino BD",
@@ -247,8 +221,7 @@ let productosSeed = [
     precio_unitario: 178.02,
     flete: "",
     fecha_entrega: "06/04/2019",
-    cantidad_disponible: 100,
-    proveedor: "Proveedor 4"
+    cantidad_disponible: 100
   },
   {
     nombre: "Pino BD",
@@ -256,8 +229,7 @@ let productosSeed = [
     precio_unitario: 283.62,
     flete: "",
     fecha_entrega: "06/04/2019",
-    cantidad_disponible: 100,
-    proveedor: "Proveedor 4"
+    cantidad_disponible: 100
   },
   {
     nombre: "Pino BD",
@@ -265,8 +237,7 @@ let productosSeed = [
     precio_unitario: 337.93,
     flete: "",
     fecha_entrega: "06/04/2019",
-    cantidad_disponible: 50,
-    proveedor: "Proveedor 4"
+    cantidad_disponible: 50
   },
   {
     nombre: "Pino BD",
@@ -274,8 +245,7 @@ let productosSeed = [
     precio_unitario: 427.84,
     flete: "",
     fecha_entrega: "06/04/2019",
-    cantidad_disponible: 50,
-    proveedor: "Proveedor 4"
+    cantidad_disponible: 50
   },
   {
     nombre: "Pino BD",
@@ -283,8 +253,7 @@ let productosSeed = [
     precio_unitario: 470.69,
     flete: "",
     fecha_entrega: "06/04/2019",
-    cantidad_disponible: 50,
-    proveedor: "Proveedor 4"
+    cantidad_disponible: 50
   },
   {
     nombre: "Pino CDM",
@@ -292,8 +261,7 @@ let productosSeed = [
     precio_unitario: 268.53,
     flete: "",
     fecha_entrega: "06/04/2019",
-    cantidad_disponible: 50,
-    proveedor: "Proveedor 6"
+    cantidad_disponible: 50
   },
   {
     nombre: "Pino CDM",
@@ -301,8 +269,7 @@ let productosSeed = [
     precio_unitario: 295.69,
     flete: "",
     fecha_entrega: "06/04/2019",
-    cantidad_disponible: 50,
-    proveedor: "Proveedor 6"
+    cantidad_disponible: 50
   },
   {
     nombre: "Pino CDM",
@@ -310,8 +277,7 @@ let productosSeed = [
     precio_unitario: 380.17,
     flete: "",
     fecha_entrega: "06/04/2019",
-    cantidad_disponible: 50,
-    proveedor: "Proveedor 6"
+    cantidad_disponible: 50
   },
   {
     nombre: "Pino CDM",
@@ -319,8 +285,7 @@ let productosSeed = [
     precio_unitario: 428.45,
     flete: "",
     fecha_entrega: "06/04/2019",
-    cantidad_disponible: 50,
-    proveedor: "Proveedor 6"
+    cantidad_disponible: 50
   },
   {
     nombre: "Cimbra",
@@ -328,8 +293,7 @@ let productosSeed = [
     precio_unitario: 289.66,
     flete: "",
     fecha_entrega: "06/04/2019",
-    cantidad_disponible: 50,
-    proveedor: "Proveedor 1"
+    cantidad_disponible: 50
   },
   {
     nombre: "Cimbra",
@@ -337,8 +301,7 @@ let productosSeed = [
     precio_unitario: 328.88,
     flete: "",
     fecha_entrega: "06/04/2019",
-    cantidad_disponible: 50,
-    proveedor: "Proveedor 1"
+    cantidad_disponible: 50
   },
   {
     nombre: "Cimbra",
@@ -346,8 +309,7 @@ let productosSeed = [
     precio_unitario: 383.19,
     flete: "",
     fecha_entrega: "06/04/2019",
-    cantidad_disponible: 50,
-    proveedor: "Proveedor 1"
+    cantidad_disponible: 50
   },
   {
     nombre: "Tzalam",
@@ -355,21 +317,29 @@ let productosSeed = [
     precio_unitario: 313.79,
     flete: "",
     fecha_entrega: "06/04/2019",
-    cantidad_disponible: 100,
-    proveedor: "Proveedor 2"
+    cantidad_disponible: 100
   }
 ];
 
-//database.Product de models product.js.productos.
-db.Product.remove({})
-  .then(() => db.Product.insertMany(productosSeed))
-  .then(data => {
-    console.log(data.length + " records inserted!");
-    process.exit(0);
-  })
-  .catch(err => {
-    console.error(err);
-    process.exit(1);
+db.Company.find({}, (error, companies) => {
+  productoSeed = productosSeed.map((producto) => {
+    const coinflip = Math.floor(Math.random() * 2);
+    producto.companyId = companies[coinflip];
   });
 
- 
+  db.Product.remove({})
+    .then(() => db.Product.create(productosSeed, (error) => {
+      if(error)
+        console.log(error);
+      else
+        console.log(productosSeed.length + " records inserted!");
+
+      process.exit(0);
+    }))
+    .catch(err => {
+      console.error(err);
+      process.exit(1);
+    });
+});
+
+//database.Product de models product.js.productos.

@@ -26,36 +26,36 @@ function Nav() {
                 <a className="nav-link js-scroll-trigger text-dark" href="#about">About</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger text-dark" href="#buyers">
+                <span className="nav-link js-scroll-trigger text-dark" href="#buyers">
                   <Link className="text-dark" to="/">
                     Buyers
-                  </Link></a>
+                  </Link></span>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger text-dark" href="#suppliers">
+                <span className="nav-link js-scroll-trigger text-dark" href="#suppliers">
                   <Link className="text-dark" to="/">
                     Suppliers
                   </Link>
-                </a>
+                </span>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger text-dark">
+                <span className="nav-link js-scroll-trigger text-dark">
                   <Link className="text-dark" to="/register">
                     Register
                   </Link>
-                </a>
+                </span>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger text-dark">  <Link className="text-dark" to="/register">
+                <span className="nav-link js-scroll-trigger text-dark">  <Link className="text-dark" to="/login">
                   Login
-                 </Link></a>
+                 </Link></span>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger text-dark"> <Link className="text-dark" to="/contact">
+                <span className="nav-link js-scroll-trigger text-dark"> <Link className="text-dark" to="/contact">
                   Contact
-                </Link></a>
+                </Link></span>
 
               </li>
             </ul>

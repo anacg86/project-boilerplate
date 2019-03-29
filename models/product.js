@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
+const companyModel = require("./company");
 
 const productSchema = new Schema({
   //id del producto hecho por mi p #
@@ -10,8 +11,23 @@ const productSchema = new Schema({
   flete: { type: Number, required: false },
   fecha_entrega: { type: String, required: true },
   cantidad_disponible: { type: Number, required: true },
-  //id del proveedor hecho por mi p #
-  proveedor: {type: String, required: true}
+  companyId: { type: Schema.Types.ObjectId, required: true}
+});
+
+productSchema.post('save', function(error, response, next) {
+  const productId = this._id;
+  const companyId = this.companyId;
+
+  companyModel.findOneAndUpdate({
+    _id: companyId
+  }, {
+    $push: { products: productId } 
+  }, (error, doc, res) => {
+    if(error)
+      console.error(error);
+    
+    next();
+  });
 });
 
 const Product = mongoose.model("Product", productSchema);

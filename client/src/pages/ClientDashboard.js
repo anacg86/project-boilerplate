@@ -50,7 +50,7 @@ class ClientDashboard extends Component {
       );
     });
 
-    if (listElements.length === 0) return <h3>No Results to Display</h3>;
+    if (listElements.length === 0) return <tr><td>No Results to Display.</td></tr>;
 
     return listElements;
   };

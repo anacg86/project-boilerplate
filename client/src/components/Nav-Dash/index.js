@@ -13,7 +13,7 @@ class NavDashboard extends Component {
                             <a className="h1 display-5 text-dark font-weight-bolder">Houdini </a>
                             <input className="form-control form-control-dark w-50" type="text" placeholder="Search" aria-label="Search" />
                             <ul className="navbar-nav px-3">
-                                <li className="nav-item text-nowrap "><a><i class=" text-dark fas fa-sign-out-alt"></i> Logout</a></li>                         
+                                <li className="nav-item text-nowrap "><span><i class=" text-dark fas fa-sign-out-alt"></i> Logout</span></li>                         
                      
                                 <li className="nav-item text-nowrap "><Link className="text-dark fas fa-sign-out-alt" to="/login">Login</Link></li>
                                 <li className="nav-item text-nowrap "><Link className="text-dark fas fa-sign-out-alt" to="/register">Register</Link></li>

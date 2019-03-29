@@ -9,6 +9,7 @@ class ProductForm extends Component {
     super(props);
 
     this.state = {
+      id: "",
       nombre: "",
       medida: "",
       precio_unitario: "",
@@ -17,6 +18,30 @@ class ProductForm extends Component {
       fecha_entrega: "",
       cantidad_disponible: ""
     };
+  }
+
+  componentDidMount() {
+    const productId = this.props.match.params.id;
+    if(productId) {
+      this.fetchProduct(productId);
+    }
+  }
+
+  fetchProduct = (productId) => {
+    API.getProduct(productId)
+    .then((response) => {
+      const producto = response.data;
+      this.setState({
+        id: producto._id,
+        nombre: producto.nombre,
+        medida: producto.medida,
+        precio_unitario: producto.precio_unitario,
+        fecha_agregado: producto.fecha_agregado,
+        flete: producto.flete,
+        fecha_entrega: producto.fecha_entrega,
+        cantidad_disponible: producto.cantidad_disponible
+      })
+    });
   }
 
   handleInputChange = (event) => {
@@ -38,6 +63,7 @@ class ProductForm extends Component {
     const flete = this.state.flete.trim();
     const fecha_entrega = this.state.fecha_entrega.trim();
     const cantidad_disponible = this.state.cantidad_disponible.trim();
+    const nombre_compania = this.state.nombre_compania.trim();
 
     API.saveProduct(this.state).then(() => {
       this.props.history.push('/');
@@ -53,7 +79,8 @@ class ProductForm extends Component {
     const flete = this.state.flete;
     const fecha_entrega = this.state.fecha_entrega;
     const cantidad_disponible = this.state.cantidad_disponible;
-
+    const nombre_compania = this.state.nombre_compania;
+    const id = this.state.id;
     return (
 
       <>
@@ -63,7 +90,12 @@ class ProductForm extends Component {
             <main className="p-5 mr-5 col-md-9 col-lg-10 ">
 
               <div className="container w-100 my-md-5 pl-md-5 my-5">
-                <h1 className=" text-dark text-center display-5 font-weight-bold">New Product</h1>
+                <h1 className=" text-dark text-center display-5 font-weight-bold">
+                {
+                  id ?
+                  "Editar producto"
+                  : "Agregar un nuevo producto"
+                }</h1>
                 <br />
                 <form onSubmit={this.submitExample}>
 
@@ -120,6 +152,15 @@ class ProductForm extends Component {
                         <option selected>Cantidad</option>
                         <option>50</option>
                         <option>100</option>
+                        <option>150</option>
+                        <option>200</option>
+                        <option>250</option>
+                        <option>300</option>
+                        <option>350</option>
+                        <option>400</option>
+                        <option>450</option>
+                        <option>500</option>
+                        <option>550</option>
                       </select>
                     </div>
 
@@ -147,9 +188,10 @@ class ProductForm extends Component {
                         value={fecha_entrega} />
                     </div>
                   </div>
+                
 
                   <div className="text-center">
-                    <button type="submit" className="btn  btn-outline-dark my-4 py-3 h-100 btn-lg">Submit</button>
+                    <button type="submit" className="btn  btn-outline-dark my-4 py-3 h-100 btn-lg">Agregar</button>
                   </div>
                 </form >
               </div >

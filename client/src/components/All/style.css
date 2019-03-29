@@ -31,8 +31,6 @@ main {
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
-	pointer-events: none;
-
 }
 
 .grid__item-content {

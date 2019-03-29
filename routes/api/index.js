@@ -2,6 +2,7 @@ const router = require("express").Router();
 const productRoutes = require("./product");
 const supplierRoutes = require("./supplier");
 const clientRoutes = require("./client");
+const companyRoutes = require("./company");
 const orderRoutes = require("./order");
 const authenticationRoutes = require("./authentication");
 
@@ -11,6 +12,7 @@ const authenticationRoutes = require("./authentication");
 router.use("/product", productRoutes);
 router.use("/supplier", supplierRoutes);
 router.use("/client", clientRoutes);
+router.use("/company", companyRoutes);
 router.use("/order", orderRoutes);
 router.use("/authentication", authenticationRoutes);
 
