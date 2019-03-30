@@ -53,6 +53,11 @@ export default {
   generateOrder: function(orderData) {
     return axios.post("/api/order", orderData)
   },
+
+  updateProduct: function(id, productData) {
+    return axios.put(`/api/product/${id}`, productData);
+  },
+
   register: function(registerData) {
     return axios.post("/api/authentication/register", registerData);
    },
