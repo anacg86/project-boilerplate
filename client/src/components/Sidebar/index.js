@@ -9,59 +9,56 @@ class Sidebar extends Component {
         <nav className="col-md-2 d-none d-md-block bg-light sidebar">
           <div className="sidebar-sticky">
             <ul className="nav flex-column">
-              <li className="nav-item">
-                <span className="nav-link active text-dark">
+
+              <li className="nav-item text-left ml-2 " >
+                <span>
                   <Link
-                    className=" nav-link font-weight-bolder"
+                    className=" active text-dark nav-link font-weight-bolder"
                     to="/dashboard"
                   >
                     &nbsp; Dashboard &nbsp;
-                    <i className=" ml-3 fas fa-lg  fa-tachometer-alt" />
                   </Link>
                 </span>
               </li>
-              <li className="nav-item">
-                <span className="nav-link text-dark">
-                  <Link className=" nav-link font-weight-bolder" to="#">
-                    &nbsp; Orders &nbsp;
-                    <i className=" ml-5 far fa-lg fa-clipboard" />
+              <li className="nav-item text-left ml-2">
+
+                <Link className="text-dark nav-link font-weight-bolder" to="#">
+                  &nbsp; Orders &nbsp;
                   </Link>
-                </span>
+
               </li>
 
-              <li className="nav-item">
-                <span
-                  className="nav-link  font-weight-bolder text-dark"
+              <li className="nav-item text-left ml-2">
+                <a
+                  className="nav-link font-weight-bolder text-dark"
                   data-toggle="collapse"
                   href="#collapse0"
                   role="button"
                   aria-expanded="false"
                   aria-controls="collapseExample"
                 >
-                  <Link
-                    className=" nav-link font-weight-bolder"
-                    to="/productdashboard"
-                  />
                   &nbsp; Products &nbsp;
                   <i className=" ml-4 fas fa-lg fa-caret-down" />
-                </span>
+
+
+                </a>
 
                 <div className="collapse" id="collapse0">
                   <span className="nav-item">
-                    <Link className="nav-link " to="/productdashboard">
-                      <span className="nav-link text-secondary">See All</span>
+                    <Link className="nav-link " to="/productsdashboard">
+                      <span className="nav-link  text-left text-secondary">See All</span>
                     </Link>
                   </span>
 
                   <span className="nav-item">
-                    <Link to="/newproduct">
-                      <span className="nav-link text-secondary">Add New Product</span>
+                    <Link className="nav-link " to="/newproduct">
+                      <span className="nav-link text-left  text-secondary">Add</span>
                     </Link>
                   </span>
                 </div>
               </li>
 
-              <li className="nav-item">
+              <li className="text-left ml-3 nav-item">
                 <a
                   className="nav-link text-dark font-weight-bolder"
                   data-toggle="collapse"
@@ -70,7 +67,7 @@ class Sidebar extends Component {
                   aria-expanded="false"
                   aria-controls="collapseExample"
                 >
-                  &nbsp; Customers &nbsp;
+                  Customers &nbsp;
                   <i className=" ml-4 fas fa-lg fa-caret-down" />
                 </a>
 
@@ -81,12 +78,6 @@ class Sidebar extends Component {
                       to="/clientdashboard"
                     >
                       <span className="nav-link text-secondary">See All</span>
-                    </Link>
-                  </span>
-
-                  <span className="nav-item">
-                    <Link className=" nav-link font-weight-bolder" to="/search">
-                      <span className="nav-link text-secondary">Search</span>
                     </Link>
                   </span>
                 </div>

@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Sidebar from "./../Sidebar";
+import Search from './../../pages/Search';
+
 
 class NavDashboard extends Component {
   render() {
@@ -14,17 +16,12 @@ class NavDashboard extends Component {
                   className=" nav-link text-warning font-weight-bolder"
                   to="/dashboard"
                 >
-                  Houdini
+                  <i className="fas fa-1x fa-magic"></i>   Houdini
                 </Link>
               </h1>
             </div>
 
-            <input
-              className="form-control form-control-dark w-100"
-              type="text"
-              placeholder="Search"
-              aria-label="Search"
-            />
+            <Search />
 
             <div className="navbar">
               <ul className="navbar-nav ml-auto">

@@ -34,17 +34,17 @@ class ClientDashboard extends Component {
     const clients = this.state.clients;
     const listElements = clients.map(element => {
       return (
-        <tr className="table" key={element._id}>
-          <td>{element.nombre_compania}</td>
+        <tr className="table py-4" key={element._id}>
+          <td > <i className="fas fa-lg fa-user-tag text-warning"></i>&nbsp;{element.nombre_compania} </td>
           <td>{element.direccion}</td>
           <td>{element.estado}</td>
           <td>{element.telefono}</td>
           <td>{element.correo}</td>
           <td>
-            <input type="checkbox" />
+            <input className="far fa-lg fa-square" type="checkbox" />
           </td>
           <td>
-            <a>Añadir a mi lista</a>
+            <a><i className="far fa-lg fa-plus-square"></i></a>
           </td>
         </tr>
       );
@@ -59,14 +59,14 @@ class ClientDashboard extends Component {
     return (
       <>
         <NavDash />
-        <div className="container-fluid ">
+        <div className="container-fluid ml-5 ">
           <div className="row">
             <main className="p-5 mr-5 col-md-9 col-lg-10 ">
               <h1>Clientes</h1>
               <table>
                 <thead>
                   <tr>
-                    <th scope="col">Nombre de Compañia</th>
+                    <th scope="col">Compañia</th>
                     <th scope="col">Direccion</th>
                     <th scope="col">Estado</th>
                     <th scope="col">Telefono</th>
