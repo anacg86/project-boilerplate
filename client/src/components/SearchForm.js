@@ -7,8 +7,12 @@ class SearchForm extends Component {
   //el datalist id y el input list se tienen que llamar igual
   render() {
     return (
-      <div>
+      <div className="input-group">
         <input
+          className="form-control  form-control-dark"
+          placeholder="Search"
+          aria-label="Search"
+          aria-describedby="Search"
           list="products"
           type="text"
           onChange={this.props.onChange}
@@ -23,8 +27,8 @@ class SearchForm extends Component {
               </option>
             );
           })}
-        </datalist>
-        <button onClick={this.props.doSearch}>Search</button>
+        </datalist >
+        <button className="btn btn-outline-secondary" onClick={this.props.doSearch}>Search<i className="fas fa-lg fa-search"></i></button>
       </div>
     );
   }

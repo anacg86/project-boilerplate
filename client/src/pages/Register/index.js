@@ -9,9 +9,9 @@ class Register extends Component {
         <div className="col-12 mt-5">
           <div className="col-12 ">
             <h5 className=" text-dark text-center display-4 font-weight-bold">
-              Registrate
+              Register
             </h5>
-            <p className="lead text-center">Ingresa la siguiente información</p>
+            <p className="lead text-center">Fill out the following</p>
 
           </div>
         </div>

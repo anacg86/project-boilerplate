@@ -14,7 +14,7 @@ class ProductRow extends React.Component {
     updateProductById: () =>
       console.warn("No updateProductById function defined")
   };
-
+//gets quantity the client wants to buy
   getQuantityField = () => {
     const product = this.props.product;
     return (
@@ -38,7 +38,7 @@ class ProductRow extends React.Component {
       />
     );
   };
-
+//if product is selected, it will become an order
   getCheckBoxField = () => {
     const product = this.props.product;
     return (

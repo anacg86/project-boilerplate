@@ -18,8 +18,8 @@ class All extends Component {
               </div>
             </div>
 
-            <div className="grid__item bg-light">
-              <div className="grid__item-content text-dark">
+            <div className="grid__item bg-dark">
+              <div className="grid__item-content text-light">
                 <small>Anyday, Anywhere</small>
 
                 <h1 className="display-4 font-weight-bold">

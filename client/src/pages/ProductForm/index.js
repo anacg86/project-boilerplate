@@ -63,13 +63,12 @@ class ProductForm extends Component {
     const flete = this.state.flete.trim();
     const fecha_entrega = this.state.fecha_entrega.trim();
     const cantidad_disponible = this.state.cantidad_disponible.trim();
-    const nombre_compania = this.state.nombre_compania.trim();
+    
 
     API.saveProduct(this.state).then(() => {
       this.props.history.push('/');
     });
   }
-
 
   render() {
     const nombre = this.state.nombre;

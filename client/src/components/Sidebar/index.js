@@ -22,7 +22,7 @@ class Sidebar extends Component {
               </li>
               <li className="nav-item">
                 <span className="nav-link text-dark">
-                  <Link className=" nav-link font-weight-bolder" to="#">
+                  <Link className=" nav-link font-weight-bolder" to="/productdashboard">
                     &nbsp; Orders &nbsp;
                     <i className=" ml-5 far fa-lg fa-clipboard" />
                   </Link>

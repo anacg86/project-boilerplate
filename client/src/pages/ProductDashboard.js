@@ -15,7 +15,7 @@ class Products extends Component {
       productos: []
     };
   }
-
+//if the user is a supplier, only gets to see their products. if user is buyer, will get to see all products
   componentDidMount() {
     const { user } = Store.get("userData");
     if(user.role === "supplier")
@@ -23,7 +23,7 @@ class Products extends Component {
     else
       this.loadAllProducts();
   }
-
+//shows all products
   loadAllProducts = () => {
     API.getProducts()
       .then(this.processProductsResponse)
@@ -31,7 +31,7 @@ class Products extends Component {
         console.log(err);
       })
   }
-
+//shows products by supplier id
   loadProductsByCompany = () => {
     const { user } = Store.get("userData");
     API.getCompanyProducts(user.companyId)
@@ -40,7 +40,7 @@ class Products extends Component {
         console.log(err);
       });
   };
-
+//process products, starts with no selection and zero quantity
   processProductsResponse = (res) => {
     const products = res.data.map(product => {
       return {
@@ -51,7 +51,7 @@ class Products extends Component {
     });
     this.setState({ productos: products });
   };
-
+//goes to component product rows and gets products by id
   getProductRows = () => {
     const productos = this.state.productos;
     const rows = productos.map((product, index) => {
@@ -73,7 +73,7 @@ class Products extends Component {
 
     return rows;
   };
-
+//update product by id, edit section
   updateProductById = (id, key, value) => {
     this.setState({
       productos: this.state.productos.map(producto => {
@@ -88,7 +88,7 @@ class Products extends Component {
       })
     });
   };
-
+//add product for supplier
   getSupplierPanel = () => {
     return (
         <Link type="button" id="agregarProducto" className="btn btn-dark" to="/newproduct">
@@ -96,7 +96,7 @@ class Products extends Component {
         </Link>
     );
   };
-
+//process order for client
   getClientPanel = () => {
     return (
       <button type="button" id="solicitud" onClick={this.processRequest} className="btn btn-dark">
@@ -121,6 +121,7 @@ class Products extends Component {
       clientId: user._id
     }).then(() => {
       console.log("Order placed successfuly")
+    //mostrar los productos en orders
     });
   };
 

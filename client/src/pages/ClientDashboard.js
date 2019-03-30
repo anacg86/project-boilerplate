@@ -19,7 +19,7 @@ class ClientDashboard extends Component {
   componentDidMount() {
     this.loadExamples();
   }
-
+//shows information from clients
   loadExamples = () => {
     API.getClients()
       .then(res => {
@@ -29,7 +29,7 @@ class ClientDashboard extends Component {
         console.log(err);
       });
   };
-
+//shows information as a table 
   getExamplesAsList = () => {
     const clients = this.state.clients;
     const listElements = clients.map(element => {

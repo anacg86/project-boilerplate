@@ -40,7 +40,7 @@ export default {
     return axios.delete(`/api/client/${id}`);
   },
 
-  // Saves an example to the database, no se de donde viene el saveProduct
+  // Saves an example to the database
   saveProduct: function(productosData) {
     return axios.post("/api/product", productosData);
   },
@@ -50,9 +50,16 @@ export default {
   saveClient: function(clientData) {
     return axios.post("/api/client", clientData);
   },
+
+  // Generates the order from the client
   generateOrder: function(orderData) {
     return axios.post("/api/order", orderData)
   },
+  //Updates product with the given id
+  updateProduct: function(id) {
+    return axios.update(`/api/product/${id}`);
+  },
+  //Authentication section
   register: function(registerData) {
     return axios.post("/api/authentication/register", registerData);
    },

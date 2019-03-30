@@ -18,7 +18,7 @@ class NavDashboard extends Component {
                 </Link>
               </h1>
             </div>
-
+            
             <input
               className="form-control form-control-dark w-100"
               type="text"
