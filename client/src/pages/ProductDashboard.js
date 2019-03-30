@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import NavDash from "./../components/NavDash";
-//import ContDash from "./../components/ContDash";
 import API from "../utils/API";
 import Store from "../utils/Store";
 import ProductRow from "../components/ProductRow";
@@ -18,7 +17,7 @@ class Products extends Component {
 
   componentDidMount() {
     const { user } = Store.get("userData");
-    if(user.role === "supplier")
+    if (user.role === "supplier")
       this.loadProductsByCompany();
     else
       this.loadAllProducts();
@@ -91,8 +90,8 @@ class Products extends Component {
 
   getSupplierPanel = () => {
     return (
-        <Link type="button" id="agregarProducto" className="btn btn-dark" to="/newproduct">
-          Agregar un producto
+      <Link type="button" id="agregarProducto" className="btn btn-dark" to="/newproduct">
+        Agregar un producto
         </Link>
     );
   };
@@ -151,11 +150,11 @@ class Products extends Component {
                         <th scope="col">Editar</th>
                       </>
                     ) : (
-                      <>
-                        <th scope="col">Seleccion de producto</th>
-                        <th scope="col">Cantidad requerida</th>
-                      </>
-                    )}
+                        <>
+                          <th scope="col">Seleccion de producto</th>
+                          <th scope="col">Cantidad requerida</th>
+                        </>
+                      )}
                   </tr>
                 </thead>
                 <tbody>{rows}</tbody>
