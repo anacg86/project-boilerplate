@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Nav from "./../../components/Nav";
-
 import "./contact.css";
 
 class Contact extends Component {

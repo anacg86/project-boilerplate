@@ -18,7 +18,7 @@ class Products extends Component {
 
   componentDidMount() {
     const { user } = Store.get("userData");
-    if(user.role === "supplier")
+    if (user.role === "supplier")
       this.loadProductsByCompany();
     else
       this.loadAllProducts();
@@ -91,8 +91,8 @@ class Products extends Component {
 
   getSupplierPanel = () => {
     return (
-        <Link type="button" id="agregarProducto" className="btn btn-dark" to="/newproduct">
-          Agregar un producto
+      <Link type="button" id="agregarProducto" className="btn btn-dark" to="/newproduct">
+        Add New Product
         </Link>
     );
   };
@@ -101,7 +101,7 @@ class Products extends Component {
     return (
       <button type="button" id="solicitud" onClick={this.processRequest} className="btn btn-dark">
         {" "}
-        Procesar solicitud de compra{" "}
+        Process purchase request{" "}
       </button>
     );
   };
@@ -138,24 +138,24 @@ class Products extends Component {
               <table className="table">
                 <thead>
                   <tr>
-                    <th scope="col">Nombre</th>
-                    <th scope="col">Medida</th>
-                    <th scope="col">Precio Unitario</th>
-                    <th scope="col">Fecha agregado</th>
-                    <th scope="col">Flete</th>
-                    <th scope="col">Fecha de entrega</th>
-                    <th scope="col">Cantidad disponible</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Size</th>
+                    <th scope="col">Unit Price</th>
+                    <th scope="col">Added Date</th>
+                    <th scope="col">Freight</th>
+                    <th scope="col">Date of Delivery</th>
+                    <th scope="col">Quantity Available</th>
                     {user.role === "supplier" ? (
                       <>
-                        <th scope="col">Borrar producto</th>
-                        <th scope="col">Editar</th>
+                        <th scope="col">Erase</th>
+                        <th scope="col">Edit</th>
                       </>
                     ) : (
-                      <>
-                        <th scope="col">Seleccion de producto</th>
-                        <th scope="col">Cantidad requerida</th>
-                      </>
-                    )}
+                        <>
+                          <th scope="col">Select</th>
+                          <th scope="col">Quantity</th>
+                        </>
+                      )}
                   </tr>
                 </thead>
                 <tbody>{rows}</tbody>
