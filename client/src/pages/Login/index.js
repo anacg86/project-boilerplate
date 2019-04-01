@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import API from "../../utils/API";
 import Store from "../../utils/Store";
+import Nav from "./../../components/Nav";
 import "./login.css";
 
 class Login extends Component {
@@ -57,63 +58,67 @@ class Login extends Component {
   render() {
     const { email, password } = this.state;
     return (
-      <div className="container  w-50 my-md-5 pl-md-5 my-5">
-        <br />
-        <form className="form-signin" id="formSignUp" method="POST" onSubmit={this.handleSubmit}>
-          <h5 className="text-dark text-center display-4 font-weight-bold mb-3">
-            Log In
+
+      <>
+        <Nav />
+        <div className="container  w-50 my-md-5 pl-md-5 my-5">
+          <br />
+          <form className="form-signin" id="formSignUp" method="POST" onSubmit={this.handleSubmit}>
+            <h5 className="text-dark text-center display-4 font-weight-bold mb-3">
+              Log In
           </h5>
-          <br />
+            <br />
 
-          <div className="row">
-            <div className="col-md-12 mb-3">
-              <input
-              name="email"
-              type="email"
-              value={email}
-              onChange={this.handleInputChange}
-                class="form-control"
-                id="email"
-                placeholder="Email"
-              />
+            <div className="row">
+              <div className="col-md-12 mb-3">
+                <input
+                  name="email"
+                  type="email"
+                  value={email}
+                  onChange={this.handleInputChange}
+                  class="form-control"
+                  id="email"
+                  placeholder="Email"
+                />
+              </div>
             </div>
-          </div>
-          <br />
-          <div className="row">
-            <div className="col-md-12 mb-3">
-              <input
-                name="password"
-                type="password"
-                value={password}
-                onChange={this.handleInputChange}
-                class="form-control"
-                id="password"
-                placeholder="Password"
-              />
+            <br />
+            <div className="row">
+              <div className="col-md-12 mb-3">
+                <input
+                  name="password"
+                  type="password"
+                  value={password}
+                  onChange={this.handleInputChange}
+                  class="form-control"
+                  id="password"
+                  placeholder="Password"
+                />
+              </div>
             </div>
-          </div>
 
-          <div className="text-center">
-            <button
-              type="submit"
-              className="btn  btn-outline-dark my-4 py-3 h-100 btn-lg"
-            >
-              Submit
+            <div className="text-center">
+              <button
+                type="submit"
+                className="btn  btn-outline-dark my-4 py-3 h-100 btn-lg"
+              >
+                Submit
             </button>
-          </div>
+            </div>
 
-          <div className="text-center">
-            <a className="small text-secondary">
-              {" "}
-              Don't have an account yet?{" "}
-              <Link className="text-secondary" to="/register">
+            <div className="text-center">
+              <a className="small text-secondary">
                 {" "}
-                Register
+                Don't have an account yet?{" "}
+                <Link className="text-secondary" to="/register">
+                  {" "}
+                  Register
               </Link>{" "}
-            </a>
-          </div>
-        </form>
-      </div>
+              </a>
+            </div>
+          </form>
+        </div>
+      </>
     );
   }
 }

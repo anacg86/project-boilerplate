@@ -62,17 +62,17 @@ class ClientDashboard extends Component {
         <div className="container-fluid ml-5 ">
           <div className="row">
             <main className="p-5 mr-5 col-md-9 col-lg-10 ">
-              <h1>Clientes</h1>
+              <h1>Clients</h1>
               <table>
                 <thead>
                   <tr>
-                    <th scope="col">Compañia</th>
-                    <th scope="col">Direccion</th>
-                    <th scope="col">Estado</th>
-                    <th scope="col">Telefono</th>
-                    <th scope="col">Correo</th>
-                    <th scope="col">Seleccionar</th>
-                    <th scope="col">Agregar</th>
+                    <th scope="col">Company</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">State</th>
+                    <th scope="col">Telephone</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Select</th>
+                    <th scope="col">Add</th>
                   </tr>
                 </thead>
                 <tbody>{clientList}</tbody>
