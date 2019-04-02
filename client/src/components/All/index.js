@@ -15,8 +15,7 @@ class All extends Component {
 
             <div id="about" className="grid__item bg-dark">
               <div className="grid__item-content text-warning">
-                <h1 className="display-1 font-weight-bolder ">Get Ready</h1>
-                <h3 className="display-3 font-weight-bolder ">with Houdini</h3>
+                <h1 className="display-1 font-weight-bolder ">Collaboration is the key</h1>
 
               </div>
             </div>
@@ -24,17 +23,13 @@ class All extends Component {
             <div className="grid__item bg-dark">
               <div className="grid__item-content text-light">
                 <small>Anyday, Anywhere</small>
-
-                <h1 className="display-4 font-weight-bold">
-                  {" "}
-                  Make your Bussiness Possible
-                </h1>
+                <br />
                 <p className="lead font-weight-normal text-justify">
                   {" "}
-                  We have the necessary tools that help reach a global audience
-                  about the product.
+                  Get ready with Houdini and start with simplicity and agility your bussiness, reach the audience you want, make the contacts you need.
                 </p>
-                <Link className="text-dark" to="/contact" className="btn w-80 btn-outline-dark">
+
+                <Link to="/contact" className="btn w-80 btn-outline-warning">
                   Contact
                 </Link>
               </div>
@@ -46,12 +41,13 @@ class All extends Component {
 
                 <h1 className="display-4 font-weight-bold">
                   {" "}
-                  Make It Possible
+                  Bussiness to bussiness
                 </h1>
                 <p className="lead font-weight-normal text-justify">
                   {" "}
-                  We have the necessary tools that help reach a global audience
-                  about the product.
+               Have communication with suppliers and receive the price can help you make the best
+               decision of who to buy.
+                
                 </p>
                 <GroupButton />
               </div>
@@ -86,12 +82,14 @@ class All extends Component {
               <div className="grid__item-content">
                 <small>All your bussiness in one place</small>
 
-                <h1 className="display-4 font-weight-bold"> Get Connected</h1>
+                <h1 className="display-4 font-weight-bold"> Bussiness to bussiness
+</h1>
                 <p className="lead font-weight-normal text-justify">
                   {" "}
-                  We have the necessary tools that help reach a global audience
-                  about the product.
-                </p>
+                  Reach the global audience you always wanted, let them know your products and
+                  improve the direct communication with the buyers. All in one place can help your
+                  orders to be easier to manage.
+                                  </p>
                 <GroupButton />
               </div>
             </div>

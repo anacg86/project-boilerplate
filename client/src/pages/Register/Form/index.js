@@ -35,7 +35,7 @@ class Form extends Component {
     });
   };
 
-  changeRole = (role) => { 
+  changeRole = (role) => {
     this.setState({
       role
     });
@@ -106,7 +106,7 @@ class Form extends Component {
         <form className="form-signin" id="formSignUp" method="POST">
           <h4 className="mb-3">Crea una cuenta</h4>
           <div className="row">
-            <ul className="nav nav-pills " id="pills-tab" role="tablist">
+            <ul className="nav nav-pills  " id="pills-tab" role="tablist">
               <li className="nav-item">
                 <a
                   className="nav-link active text-dark"

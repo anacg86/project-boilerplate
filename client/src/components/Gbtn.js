@@ -6,11 +6,11 @@ class GroupButton extends Component {
     return (
       <div className="btn-group my-4" role="group">
 
-        <Link to="/login" className="btn btn-outline-dark text-dark">
+        <Link to="/login" className="btn btn-outline-dark">
           Login{" "}
         </Link>
 
-        <Link to="/register" className="btn btn-outline-dark text-dark">
+        <Link to="/register" className="btn btn-outline-dark">
           Register
           </Link>
       </div>

@@ -55,17 +55,17 @@ class SupplierDashboard extends Component {
     const supplierList = this.getExamplesAsList();
     return (
       <div className="container">
-        <h1>Distribuidor</h1>
+        <h1>Supplier</h1>
         <table>
           <thead>
             <tr>
-              <th scope="col">Nombre de Compañia</th>
-              <th scope="col">Direccion</th>
-              <th scope="col">Estado</th>
-              <th scope="col">Telefono</th>
-              <th scope="col">Correo</th>
-              <th scope="col">Seleccionar</th>
-              <th scope="col">Agregar</th>
+              <th scope="col">Company Name</th>
+              <th scope="col">Address</th>
+              <th scope="col">State</th>
+              <th scope="col">Telephone</th>
+              <th scope="col">Email</th>
+              <th scope="col">Select</th>
+              <th scope="col">Add</th>
             </tr>
           </thead>
           <tbody>{supplierList}</tbody>
