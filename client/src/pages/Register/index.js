@@ -13,7 +13,7 @@ class Register extends Component {
             <h5 className=" text-dark text-center display-4 font-weight-bold">
               Register
             </h5>
-            <p className="lead text-center">Ingresa la siguiente información</p>
+            <p className="lead text-center">Fill out the following information.</p>
 
           </div>
         </div>

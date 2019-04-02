@@ -104,7 +104,7 @@ class Form extends Component {
         onSubmit={this.handleSubmit}
       >
         <form className="form-signin" id="formSignUp" method="POST">
-          <h4 className="mb-3">Crea una cuenta</h4>
+          <h4 className="mb-3">Create an account</h4>
           <div className="row">
             <ul className="nav nav-pills  " id="pills-tab" role="tablist">
               <li className="nav-item">
@@ -179,7 +179,7 @@ class Form extends Component {
               type="submit"
               className="btn  btn-outline-warning my-4 py-3 h-100 btn-lg"
             >
-              Continuar
+              Submit
             </button>
           </div>
 

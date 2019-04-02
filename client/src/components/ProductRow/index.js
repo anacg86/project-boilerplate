@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import Store from "../../utils/Store";
+import API from "../../utils/API";
 
 class ProductRow extends React.Component {
   static propTypes = {
@@ -57,13 +58,20 @@ class ProductRow extends React.Component {
     )
   }
 
+  deleteProduct = () => {
+    const product = this.props.product;
+    API.deleteProduct(product._id).then((response) => {
+      window.location.reload();
+    });
+  }
+
   getEditButton = () => {
     const product = this.props.product;
     return <Link className="btn btn-dark" to={`/editproduct/${product._id}`}>Editar</Link>;
   };
 
   getDeleteButton = () => {
-    return <button className="btn btn-dark">Borrar</button>
+    return <button className="btn btn-dark" onClick={this.deleteProduct}>Borrar</button>
   }
 
   render() {

@@ -36,7 +36,7 @@ class Login extends Component {
         password
       }).then(response => {
         Store.set("userData", response.data);
-        this.props.history.push("/");
+        this.props.history.push("/dashboard");
       });
     }
   };

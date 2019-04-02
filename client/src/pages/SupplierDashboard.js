@@ -41,7 +41,7 @@ class SupplierDashboard extends Component {
           <td>{element.telefono}</td>
           <td>{element.correo}</td>
           <td><input type="checkbox"></input></td>
-          <td><a>Añadir a mi lista</a></td>
+          <td><a>Add to my list</a></td>
         </tr>
       );
     });
