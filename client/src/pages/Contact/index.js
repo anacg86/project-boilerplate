@@ -12,7 +12,7 @@ class Contact extends Component {
           <div className="col-12">
             <div className="col-12">
               <h5 className="my-5 text-dark text-center display-4 font-weight-bold">
-                Contáctanos
+                Contact Us
             </h5>
             </div>
           </div>
@@ -31,7 +31,7 @@ class Contact extends Component {
                     className="form-control"
                     id="name"
                     name="name"
-                    placeholder="Tu nombre"
+                    placeholder="Your name"
                     tabindex="1"
                     required
                   />
@@ -42,7 +42,7 @@ class Contact extends Component {
                     className="form-control"
                     id="email"
                     name="email"
-                    placeholder="Tu correo"
+                    placeholder="Your email"
                     tabindex="2"
                     required
                   />
@@ -53,7 +53,7 @@ class Contact extends Component {
                     className="form-control"
                     id="subject"
                     name="subject"
-                    placeholder="Título"
+                    placeholder="Subject"
                     tabindex="3"
                   />
                 </div>
@@ -65,7 +65,7 @@ class Contact extends Component {
                     type="text"
                     className="form-control"
                     id="message"
-                    placeholder="Mensaje..."
+                    placeholder="Message..."
                     tabindex="4"
                     required
                   />
@@ -75,7 +75,7 @@ class Contact extends Component {
                     type="submit"
                     className="btn  btn-outline-warning my-4 py-3 h-100 btn-lg"
                   >
-                    Enviar
+                    Submit
                 </button>
                 </div>
               </form>

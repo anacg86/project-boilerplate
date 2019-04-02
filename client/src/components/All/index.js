@@ -45,8 +45,7 @@ class All extends Component {
                 </h1>
                 <p className="lead font-weight-normal text-justify">
                   {" "}
-               Have communication with suppliers and receive the price can help you make the best
-               decision of who to buy.
+               The best communication between buyers and suppliers. Receive the price from different suppliers in order to buy the best product. 
                 
                 </p>
                 <GroupButton />
@@ -69,7 +68,7 @@ class All extends Component {
               <div className="grid__item-content ">
                 <small className="text-light">
                   {" "}
-                  Are you interested in reach a global audience?
+                  Are you interested in reaching a global audience?
                 </small>
                 <h1 className="display-1 font-weight-bolder text-warning ">
                   {" "}
@@ -87,8 +86,8 @@ class All extends Component {
                 <p className="lead font-weight-normal text-justify">
                   {" "}
                   Reach the global audience you always wanted, let them know your products and
-                  improve the direct communication with the buyers. All in one place can help your
-                  orders to be easier to manage.
+                  improve the direct communication with your clients. All in one place will help you manage 
+                  orders in an easier way.
                                   </p>
                 <GroupButton />
               </div>

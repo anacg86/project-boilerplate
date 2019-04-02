@@ -45,7 +45,7 @@ class Sidebar extends Component {
 
                 <div className="collapse" id="collapse0">
                   <span className="nav-item">
-                    <Link className="nav-link " to="/productsdashboard">
+                    <Link className="nav-link " to="/productdashboard">
                       <span className="nav-link  text-left text-secondary">See All</span>
                     </Link>
                   </span>
